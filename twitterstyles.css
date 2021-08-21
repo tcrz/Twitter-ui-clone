@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.twitter{
+    display:flex;
+}
+
+.nav-container{
+    flex: 2;
+    position: sticky;
+    top: 0%;
+}
+
+.timeline{
+    flex: 4;
+    border-right: 1px solid rgba(239, 237, 237, 0.74);
+    border-left: 1px solid rgba(239, 237, 237, 0.74);
+}
+
+.trends{
+    flex: 3; 
+    /* display: none; */
+}
+
+.tweet-box{
+    display: flex;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgb(149, 189, 235)
+}
+
+.profile-pic{
+    width: 45px;
+    height: 45px;
+    border-radius: 150px;
+}
+
+.handle{
+    /* background: blue; */
+    display:flex;
+    /* gap: 160px; */
+    justify-content: space-between;
+}
+
+p{
+    flex-grow: 2;
+    padding-bottom: 3px;
+    margin: 0px
+}
+
+p span{
+    font-weight: 600;
+}
+
+.details-box{
+    background-color: pink;
+    width: 100%
+
+}
+
+.icons{
+    display: flex;
+    gap: 20%;
+    padding-top: 8px;
+}
+
+ion-icon{
+    color:rgb(88, 83, 83);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* QUOTED TWEET */
+
+.quote-img{
+    /* margin: 0px; */
+    padding-top: 5px;
+}
+
+.quote-img .tweeted-photo{
+    /* display:inline-block; */
+    border-radius: 10px;
+    width:100%;
+    height: 300px;
+    /* margin-top: 4px; */
+    
+}
+
+
+
+/* quoted tweet box */
+.quoted-tweet-section{
+    margin-top: 2px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    /* width: 400px; */
+    padding: 10px;
+}
+
+.quoted-tweet-box{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.quoted-tweet-img{
+    width: 22px;
+    height: 22px;
+    border-radius: 150px;
+}
+
