@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   
     <link rel="stylesheet" href="twitterstyles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="script.js"></script>
+    <script src="/jquery/autosize.min.js"></script>
 </head>
 
 <body>
@@ -18,13 +23,34 @@
         </div>
 
         <div class="timeline">
+            <div class="tweet-box header">
+                <h2>Home</h2>
+            </div>
+
+            <div class="tweet-box user-input">
+                <img  class="profile-pic" src="https://www.dhresource.com/0x0/f2/albu/g5/M00/9C/69/rBVaJFlt2AqAYb_9AANDTL-dnLA396.jpg/paris-eiffel-tower-photography-backdrop-beautiful.jpg"
+                alt="paris">
+                <div class="details-box">
+                    <textarea  name="text" id="email" placeholder="What's happening?"></textarea>
+                         
+                        
+                         <div class="icons">
+                            <ion-icon name="chatbox-outline"></ion-icon>
+                            <ion-icon name="repeat-outline"></ion-icon>
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="share-social-outline"></ion-icon>
+                        </div>
+                    </div>
+    
+            </div>
+    
+
         <div class="tweet-box">
-            
             <img  class="profile-pic" src="https://www.dhresource.com/0x0/f2/albu/g5/M00/9C/69/rBVaJFlt2AqAYb_9AANDTL-dnLA396.jpg/paris-eiffel-tower-photography-backdrop-beautiful.jpg"
             alt="paris">
             <div class="details-box">
                 <div class="handle">
-                <p> <span>Electra</span> @jan_ianne <span class="dot">&#8226;</span> 4m </p></p>
+                <p> <strong> <a href="#">Sugarr</a> </strong> @missxsDani <span class="dot">&#8226;</span> 4m </p></p>
                 <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -48,7 +74,7 @@
 
             <div class="details-box">
                 <div class="handle">
-                    <p> <span>Cashito</span> @stjamesio <span class="dot">&#8226;</span> 4m </p></p>
+                    <p> <strong> <a href="#">Cashito</a> </strong> @stjamesio <span class="dot">&#8226;</span> 4m </p></p>
                     <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                     </div>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -68,7 +94,8 @@
 
                     <div class="details-box">
                         <div class="handle">
-                            <p> <span>Smoke</span> @relliBenz <span class="dot">&#8226;</span> 4m </>
+                            
+                            <p> <strong> <a href="#">Smoke</a> </strong> @relliBenz <span class="dot"> &#8226;</span> 4m </p>
                         </div>
                     </div>
 
@@ -96,7 +123,7 @@
             alt="paris">
             <div class="details-box">
                 <div class="handle">
-                <p> <span>Electra</span> @jan_ianne <span class="dot">&#8226;</span> 4m </p></p>
+                <p> <strong><a href="#">Electra</a></strong> @jan_ianne <span class="dot">&#8226;</span> 4m </p>
                 <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
 
@@ -118,7 +145,7 @@
             alt="paris">
             <div class="details-box">
                 <div class="handle">
-                <p> <span>Electra</span> @jan_ianne <span class="dot">&#8226;</span> 4m </p></p>
+                <p>  <strong> <a href="#">Electra</a> </strong> @jan_ianne <span class="dot">&#8226;</span> 4m </p></p>
                 <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
                      Sunt qui tempore assumenda necessitatibus, sint quo molestiae consequuntur est, 
