@@ -19,7 +19,9 @@ a{
     color:black
 }
 
-/* LAYOUT */
+/******************
+*     LAYOUT      *
+******************/
 .twitter{
     display:flex;
 }
@@ -41,32 +43,31 @@ a{
     /* display: none; */
 }
 
+/******************
+*     TIMELINE    *
+******************/
+.timeline-header{ 
+    position: sticky;
+    top: 0%;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    background:white;
+    z-index: 9999;
+}
 
-/* TWEETBOX */
-
+/**TWEET-BOX**/
 .tweet-box{
     display: flex;
     border-bottom: 1px solid rgb(226, 226, 226);
     gap: 8px;
     padding: 10px 20px;
     /* background: rgb(149, 189, 235) */
+    position: relative;
 }
 
 .tweet-box:hover{
     background: rgba(31, 29, 29, 0.048);
     cursor: pointer;
-}
-
-.header{ 
-    position: sticky;
-    top: 0%;
-    padding-top: 15px;
-    background:white;
-    z-index: 9999;
-}
-
-.header:hover{
-    background: none;
 }
 
 .profile-pic{
@@ -77,9 +78,10 @@ a{
 
 .handle{
     /* background: blue; */
-    display:flex;
+    /* display:flex; */
     /* gap: 160px; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    
 }
 
 .handle a:hover{
@@ -107,21 +109,8 @@ strong{
 
 }
 
-.icons{
-    display: flex;
-    gap: 20%;
-    padding-top: 8px;
-}
 
-ion-icon{
-    color:rgb(88, 83, 83);
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/******************
-*  INPUT TWEETBOX *
-******************/
+/***INPUT TWEETBOX***/
 .user-input:hover{
     background: none;
     cursor: auto
@@ -139,6 +128,63 @@ textarea{
 }
 
 textarea:focus{outline: none}
+
+/* ICONS */
+
+.icons{
+    display: flex;
+    gap: 20%;
+    padding-top: 8px;
+    /* background: lightblue; */
+}
+
+ion-icon{
+    color:rgb(88, 83, 83);
+    font-size: 120%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* ion-icon{
+    color:#696565;
+    font-size: 130%;
+     border: 1px solid transparent;
+     border-radius: 50%;
+     padding: 5px;
+} */
+ion-icon[name="ellipsis-horizontal-outline"]{
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 97%;
+}
+ion-icon[name="repeat-outline"]{      
+    /* transform: rotate(90deg); */
+    /* font-size: 150%; */
+    //color: #0dd30d;
+}
+
+ion-icon[name="ellipsis-horizontal-outline"]:hover,
+ion-icon[name="chatbox-outline"]:hover,
+ion-icon[name="share-social-outline"]:hover{
+    background: rgba(0, 172, 238, 0.1);
+    color:#00acee
+}
+
+
+ion-icon[name="heart-outline"]:hover{
+    background: rgba(247, 50, 50, 0.13);
+    color:#f75252
+}
+
+ion-icon[name="repeat-outline"]:hover{
+    background: rgba(0, 128, 0, 0.13);
+    color:#0dd30d;
+}
+
+
 
 
 /* QUOTED TWEET */
