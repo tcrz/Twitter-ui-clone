@@ -18,6 +18,8 @@ a{
     text-decoration: none;
     color:black
 }
+/* DEFAULT ICONS */
+
 
 /******************
 *     LAYOUT      *
@@ -127,14 +129,31 @@ textarea{
     resize: none;
 }
 
+.iconsandbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    /* background: red; */
+}
+.iconsandbtn ion-icon{
+    color: #1DA1F2;
+    
+}
+.tweetbtn{
+    color: white;
+    background: #1DA1F2;
+    padding: 10px 20px;
+    border-radius: 58px;
+}
+
 textarea:focus{outline: none}
 
 /* ICONS */
-
 .icons{
     display: flex;
     gap: 20%;
-    padding-top: 8px;
+    margin-top: 8px;
     /* background: lightblue; */
 }
 
@@ -166,6 +185,7 @@ ion-icon[name="repeat-outline"]{
     //color: #0dd30d;
 }
 
+.iconsandbtn ion-icon:hover,
 ion-icon[name="ellipsis-horizontal-outline"]:hover,
 ion-icon[name="chatbox-outline"]:hover,
 ion-icon[name="share-social-outline"]:hover{
