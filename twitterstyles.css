@@ -11,18 +11,40 @@ html{
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     /* height: 100%; */
-    /* font-size: 14px; */
+    font-size: 97%;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 a{
     text-decoration: none;
     color:black
 }
-/* DEFAULT ICONS */
+
+/* DEFAULTS */
 ion-icon{
     font-size: 130%;
+    cursor: pointer;
 }
 
+.btn{
+    color: white;
+    background: rgb(29, 155, 240);
+    border-radius: 58px;
+}
+
+.btn:hover{
+    background: rgb(29, 155, 240);
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 /******************
 *     LAYOUT      *
 ******************/
@@ -53,8 +75,7 @@ ion-icon{
     position: sticky;
     top: 0%;
     color:red;
-    margin-left: 45px;
-    
+    margin-left: 50px;
 }
 
 .nav {
@@ -63,9 +84,13 @@ ion-icon{
     /* align-items: flex-start; */
     /* justify-content: space-between; */
 }
+
+.main-nav-box{
+    padding-top: 17px;
+}
 .main-nav-box a{
     padding: 10px 12px;
-    font-size: 140%;
+    font-size: 133%;
     
 }
 
@@ -78,8 +103,6 @@ ion-icon{
 
 .main-nav a {
     display: flex;
-    /* gap: 5%; */
-    /* justify-content: space-between; */
     align-items: center;
     /* font-weight:600; */
     /* padding: 4px 10px; */
@@ -89,8 +112,15 @@ ion-icon{
     
 }
 .main-nav a:hover{
+    background: rgba(162, 165, 168, 0.582);
+}
 
-    background: rgba(216, 217, 218, 0.582);
+.navtweetbtn{
+    font-size: 20px;
+    align-self: auto;
+    margin-top:7px;
+    padding: 14px 85px;
+    box-shadow: 0 5px 10px #e3dede;
 }
 
 /* NAV-TWITTER ICON */
@@ -99,8 +129,8 @@ ion-icon{
 }
 
 .main-nav-box ion-icon[name="logo-twitter"]{
-    padding-top: 17px;
-    color:rgb(29, 155, 240);
+    /* border: 1px solid red; */
+    /* color:rgb(29, 155, 240); */
     
 }
 
@@ -195,18 +225,14 @@ textarea{
     margin-top: 10px;
     /* background: red; */
 }
-.iconsandbtn ion-icon{
+.main-nav-box ion-icon[name="logo-twitter"], .iconsandbtn ion-icon{
     border: 8px solid transparent;
     border-radius: 50%;
-    cursor: pointer;
     color: rgb(29, 155, 240);
     
 }
 .tweetbtn{
-    color: white;
-    background: rgb(29, 155, 240);;
     padding: 10px 20px;
-    border-radius: 58px;
 }
 
 textarea:focus{outline: none}
@@ -220,11 +246,11 @@ textarea:focus{outline: none}
     /* background: lightblue; */
 }
 
+ion-icon[name="ellipsis-horizontal-outline"],
 .timeline-icons ion-icon{
     color:rgb(88, 83, 83);
     border: 8px solid transparent;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 
@@ -235,6 +261,7 @@ ion-icon[name="ellipsis-horizontal-outline"]{
     font-size: 97%;
 }
 
+.main-nav-box ion-icon[name="logo-twitter"]:hover,
 .iconsandbtn ion-icon:hover,
 ion-icon[name="ellipsis-horizontal-outline"]:hover,
 ion-icon[name="chatbox-outline"]:hover,
