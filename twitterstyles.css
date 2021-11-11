@@ -53,7 +53,6 @@ ion-icon{
     position: sticky;
     top: 0%;
     color:red;
-    background: yellow;
     margin-left: 45px;
     
 }
@@ -64,15 +63,45 @@ ion-icon{
     /* align-items: flex-start; */
     /* justify-content: space-between; */
 }
+.main-nav-box a{
+    padding: 10px 12px;
+    font-size: 140%;
+    
+}
 
 .main-nav {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    
 }
 
 .main-nav a {
     display: flex;
+    /* gap: 5%; */
+    /* justify-content: space-between; */
     align-items: center;
+    /* font-weight:600; */
+    /* padding: 4px 10px; */
+    border: 1px solid transparent;
+    border-radius: 150px;
+    /* background: red; */
+    
+}
+.main-nav a:hover{
+
+    background: rgba(216, 217, 218, 0.582);
+}
+
+/* NAV-TWITTER ICON */
+.main-nav-box ion-icon{
+    margin-right: 20px;
+}
+
+.main-nav-box ion-icon[name="logo-twitter"]{
+    padding-top: 17px;
+    color:rgb(29, 155, 240);
+    
 }
 
 /******************
@@ -195,7 +224,6 @@ textarea:focus{outline: none}
     color:rgb(88, 83, 83);
     border: 8px solid transparent;
     border-radius: 50%;
-    
     cursor: pointer;
 }
 
