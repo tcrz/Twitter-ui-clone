@@ -119,8 +119,7 @@ button, input[type="submit"], input[type="reset"] {
     /* background: red; */
 }
 .main-nav a:hover{
-    
-    background: rgba(31, 29, 29, 0.115);
+    background: #E6E7E7;
 }
 
 /* NAV-SECTION BUTTON */
@@ -129,8 +128,7 @@ button, input[type="submit"], input[type="reset"] {
     /* align-self: auto; */
     margin-top:7px;
     padding: 14px 90px;
-    box-shadow: 0 5px 13px #e3dede;
-    
+    box-shadow: 0 5px 15px #e3dede;
 }
 
 /* NAV-SECTION ICONS */
@@ -169,7 +167,7 @@ button, input[type="submit"], input[type="reset"] {
     border-radius: 150px;
 }
 .nav-user-account:hover{
-    background: rgba(31, 29, 29, 0.115);
+    background: #E6E7E7;
 }
 
 .user-details ion-icon{
@@ -202,7 +200,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .tweet-box:hover{
-    background: rgba(31, 29, 29, 0.048);
+    background: #F7F7F7;
     cursor: pointer;
 }
 
