@@ -183,7 +183,7 @@ button, input[type="submit"], input[type="reset"] {
 .timeline-header{ 
     position: sticky;
     top: 0%;
-    padding: 15px 20px;
+    padding: 12px 20px;
     border-bottom: 1px solid rgb(226, 226, 226);
     background:white;
     z-index: 9999;
@@ -327,6 +327,7 @@ textarea{
 textarea:focus{outline: none}
 
 
+
 /* QUOTED TWEET */
 .quote-img{
     /* margin: 0px; */
@@ -370,3 +371,56 @@ textarea:focus{outline: none}
     border-radius: 150px;
 }
 
+/******************
+* TRENDS SECTION  *
+******************/
+
+.trends-section{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 30px;
+    padding-right: 50px;
+    gap: 18px;
+    /* background: red; */
+}
+
+.trend-topics, .who-to-follow{ 
+    padding:0px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+/* SEARCH BOX */
+.search{
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background: white;
+    padding: 3px;
+}
+.search-box{
+    background: #EFF3F4;
+    display: flex;
+    padding:12px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    gap: 20px;
+}
+
+input[placeholder]{
+    flex: 1;
+    color:none;
+    background: none;
+    border: none;
+    font-size: 100%
+}
+
+input:focus{outline: none}
+
+ion-icon[name="search-outline"]
+{
+    color: #667681;
+}
+
+/* TREND TOPICS */
