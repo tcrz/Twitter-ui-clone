@@ -34,7 +34,7 @@ ion-icon{
 }
 
 .btn:hover{
-    background: rgb(27, 151, 233);
+    background: #1b97e9;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -59,13 +59,13 @@ button, input[type="submit"], input[type="reset"] {
     
 }
 
-.timeline{
+.timeline-section{
     flex: 4;
     border-right: 1px solid rgba(239, 237, 237, 0.74);
     border-left: 1px solid rgba(239, 237, 237, 0.74);
 }
 
-.trends{
+.trends-follow-section{
     flex: 2.8; 
     /* display: none; */
 }
@@ -114,6 +114,7 @@ button, input[type="submit"], input[type="reset"] {
     /* font-weight:600; */
     padding: 10px 12px;
     border: 1px solid transparent;
+    /* outline-style: solid; */
     border-radius: 150px;
     transition: ease-out 0.1s;
     /* background: red; */
@@ -121,6 +122,7 @@ button, input[type="submit"], input[type="reset"] {
 .main-nav a:hover{
     background: #E6E7E7;
 }
+
 
 /* NAV-SECTION BUTTON */
 .navtweetbtn{
@@ -135,6 +137,7 @@ button, input[type="submit"], input[type="reset"] {
 .main-nav-box ion-icon{
     margin-right: 20px;
 }
+
 
 .main-nav-box ion-icon[name="logo-twitter"]{
     font-size: 150%;
@@ -192,7 +195,7 @@ button, input[type="submit"], input[type="reset"] {
 /**TWEET-BOX**/
 .tweet-box{
     display: flex;
-    border-bottom: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid #e2e2e2;
     gap: 8px;
     padding: 10px 20px;
     /* background: rgb(149, 189, 235) */
@@ -226,7 +229,7 @@ p{
     flex-grow: 2;
     padding-bottom: 3px;
     margin: 0px;
-    color: rgb(66, 62, 62);
+    color: #423e3e;
 }
 
 .dot{
@@ -313,11 +316,11 @@ textarea{
 .iconsandbtn-box ion-icon{
     border: 8px solid transparent;
     border-radius: 50%;
-    color: rgb(29, 155, 240);
+    color: #1d9bf0;
 }
 
 .iconsandbtn-box ion-icon:hover{
-    background: rgba(0, 172, 238, 0.1);
+    background: #00acee1a;
 }
 
 .tweetbtn{
@@ -375,37 +378,46 @@ textarea:focus{outline: none}
 * TRENDS SECTION  *
 ******************/
 
-.trends-section{
+.trends-follow-container{
     display:flex;
     flex-direction: column;
-    padding: 3px 30px;
+    padding: 3px 25px;
     padding-right: 50px;
     gap: 18px;
     /* background: red; */
 }
 
-.trend-topics, .who-to-follow{ 
-    padding:0px;
-    border: 1px solid black;
-    border-radius: 10px;
 
-}
-
-/* SEARCH BOX */
+/*** SEARCH BOX ***/
 .search{
     position: sticky;
     top: 0%;
     z-index: 999;
     background: white;
     padding: 3px;
+    /* width: 100% */
 }
 .search-box{
     background: #EFF3F4;
     display: flex;
-    padding:12px;
-    /* border: 1px solid black; */
+    padding:10px 12px;
+    border: 1px solid transparent;
     border-radius: 30px;
-    gap: 20px;
+    gap: 15px;
+}
+
+.search-box ion-icon[name="search-outline"]{
+    padding-left: 5px;
+    font-size: 135%;
+}
+.search-box-highlight{
+    border: 1px solid #1d9bf0;
+    
+}
+.search-box-highlight ion-icon[name="search-outline"]
+{
+    cursor: auto;
+    color: #1d9bf0;
 }
 
 input[placeholder]{
@@ -420,7 +432,71 @@ input:focus{outline: none}
 
 ion-icon[name="search-outline"]
 {
+    cursor: auto;
     color: #667681;
 }
 
-/* TREND TOPICS */
+/*** TREND TOPICS ***/
+.trends-box{
+    /* padding:10px; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background: #F7F9F9;
+    /* background: red */
+}
+
+.trend-topics{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.trends-heading{
+    display:flex;
+    gap: 47%;
+    padding: 10px 14px;
+}
+.topic, .show-more{
+    /* color: red; */
+    /* background: red; */
+    padding:14px 14px
+}
+
+.topic:hover{
+    background: #F7F7F7;
+    cursor: pointer;
+}
+
+.topic ion-icon[name="ellipsis-horizontal"]{
+    float:right;
+    font-size: 97%;
+    color:rgb(88, 83, 83);
+    border: 8px solid transparent;
+    border-radius: 50%;
+}
+
+.topic ion-icon[name="ellipsis-horizontal"]:hover{
+    background: #e0ecf8b7;
+    color:#1E9BF0;
+}
+
+.show-more p{
+    color:#1E9BF0;
+    /* padding: 16px 14px; */
+    font-size: 110%;
+    border-radius: 0px 0px 10px 10px
+}
+
+.show-more:hover{
+    background: #F7F7F7;
+    cursor: pointer;
+}
+
+.extra-topics{
+    display:none
+}
+
+.extra-topics.show{
+    display:block
+}
+
+

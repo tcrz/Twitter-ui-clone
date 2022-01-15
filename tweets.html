@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home / Twitter</title>
 
     <link rel="stylesheet" href="twitterstyles.css">
     <style>
@@ -33,14 +33,14 @@
                         
                         <div class="main-nav">
                             
-                            <a href="#"> <ion-icon name="home-outline"></ion-icon> Home </a>
-                            <a href="#"> <ion-icon name="globe-outline"></ion-icon> Explore</a>
-                            <a href="#"> <ion-icon name="notifications-outline"></ion-icon> Notifications</a>
-                            <a href="#"> <ion-icon name="folder-outline"></ion-icon> Messages</a>
-                            <a href="#"> <ion-icon name="bookmark-outline"></ion-icon> Bookmark</a>
-                            <a href="#"> <ion-icon name="document-text-outline"></ion-icon> Lists</a>
-                            <a href="#"> <ion-icon name="person-outline"></ion-icon> Profile</a>        
-                            <a href="#"> <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon> More</a>
+                            <a href="#0" class="color-toggle"> <ion-icon name="home-outline"></ion-icon> Home </a>
+                            <a href="#2" class="color-toggle"> <ion-icon name="globe-outline"></ion-icon> Explore</a>
+                            <a href="#28"class="color-toggle"> <ion-icon name="notifications-outline"></ion-icon> Notifications</a>
+                            <a href="#" class="color-toggle"> <ion-icon name="folder-outline"></ion-icon> Messages</a>
+                            <a href="#" class="color-toggle"> <ion-icon name="bookmark-outline"></ion-icon> Bookmark</a>
+                            <a href="#" class="color-toggle"> <ion-icon name="document-text-outline"></ion-icon> Lists</a>
+                            <a href="#" class="color-toggle"> <ion-icon name="person-outline"></ion-icon> Profile</a>        
+                            <a href="#" class="color-toggle"> <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon> More</a>
                             
                     </div>
 
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="timeline">
+        <div class="timeline-section">
             <div class="timeline-header">
                 <h2>Home</h2>
             </div>
@@ -84,21 +84,16 @@
 
                     <div class="user-input iconsandbtn-box">
                         <div>
-                            <a href='#'>
-                                <ion-icon name="image-outline"></ion-icon>
-                            </a>
-                            <a href='#'>
-                                <ion-icon name="bar-chart-outline"></ion-icon>
-                            </a>
-                            <a href='#'>
-                                <ion-icon name="happy-outline"></ion-icon>
-                            </a>
-                            <a href='#'>
-                                <ion-icon name="calendar-outline"></ion-icon>
-                            </a>
+                            
+                            <ion-icon name="image-outline"></ion-icon>
+                            <ion-icon name="bar-chart-outline"></ion-icon>
+                            <ion-icon name="happy-outline"></ion-icon>
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <ion-icon name="location-outline"></ion-icon>
                         </div>
 
                         <div>
+                            <!-- <button class="btn tweetbtn">Tweet</button> -->
                             <a href="#1" class="btn tweetbtn">Tweet</a>
                         </div>
 
@@ -128,6 +123,7 @@
                     <div class="timeline-icons">
                         <ion-icon name="ellipsis-horizontal"></ion-icon>
                         <ion-icon name="chatbox-outline"></ion-icon>
+                        <!-- <i class="fas fa-retweet"></i> -->
                         <ion-icon name="repeat-outline"></ion-icon>
                         <ion-icon name="heart-outline"></ion-icon>
                         <ion-icon name="share-social-outline"></ion-icon>
@@ -248,8 +244,8 @@
 
         </div>
 
-        <div class="trends">
-            <div class="trends-section">
+        <div class="trends-follow-section">
+            <div class="trends-follow-container">
                 <div class="search">
                     <div class="search-box">
                         <ion-icon name="search-outline"></ion-icon>
@@ -257,7 +253,45 @@
                         </input>
                     </div>
                 </div>
-                <div class="trend-topics">GHANA TRENDS</div>
+                <div class="trends-box">
+                    <div class="trend-topics">
+                        
+                        <div class=trends-heading>
+                             <h2>Ghana Trends</h2>
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </div>
+                        <div class="topic">
+                                <ion-icon name="ellipsis-horizontal"></ion-icon>
+                                <p> 1 <span class="dot">&#8226;</span> Football <span class="dot">&#8226;</span> Trending </p>
+                                <h3>Manchester United</h3> 
+                                <p> 118K Tweets </p>
+                        </div>
+                        <div class="topic">
+                            <ion-icon name="ellipsis-horizontal"></ion-icon>
+                            <p> 2 <span class="dot">&#8226;</span> Sports <span class="dot">&#8226;</span> Trending </p>
+                            <h3>#AFCON2021</h3> 
+                            <p> 3,418 Tweets </p>
+                        </div>
+                        <div class="topic">
+                            <ion-icon name="ellipsis-horizontal"></ion-icon>
+                            <p> 2 <span class="dot">&#8226;</span> Music <span class="dot">&#8226;</span> Trending </p>
+                            <h3>Rihanna</h3> 
+                            <p> 3,418 Tweets </p>
+                        </div>
+                        <div class="topic extra-topics">
+                            <ion-icon name="ellipsis-horizontal"></ion-icon>
+                            <p> 3 <span class="dot">&#8226;</span> Rap <span class="dot">&#8226;</span> Trending </p>
+                            <h3>#NoPressureAlbum</h3> 
+                            <p> 45.9K Tweets </p>
+                        </div>
+                        <div class="show-more">
+                            <p id="text-toggle">Show more trends</p>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
                 <div class="who-to-follow">WHO TO FOLLOW</div>
 
 
