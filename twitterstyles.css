@@ -5,7 +5,7 @@
 }
 
 html{
-    /* font-family: 'Arimo', sans-serif; */
+    font-family: 'Arimo', sans-serif;
     /* word-spacing: 1px; */
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -55,7 +55,8 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .nav-section{
-    flex: 2;
+    /* display: none; */
+    flex: 2.1;
     
 }
 
@@ -126,6 +127,7 @@ button, input[type="submit"], input[type="reset"] {
 
 /* NAV-SECTION BUTTON */
 .navtweetbtn{
+    /* font-weight: 400; */
     font-size: 20px;
     /* align-self: auto; */
     margin-top:7px;
@@ -208,8 +210,8 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .profile-pic{
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 50px;
     border-radius: 150px;
 }
 
@@ -225,7 +227,7 @@ button, input[type="submit"], input[type="reset"] {
     text-decoration: underline;
 }
 
-p{
+.tweetbox p{
     flex-grow: 2;
     padding-bottom: 3px;
     margin: 0px;
@@ -377,7 +379,10 @@ textarea:focus{outline: none}
 /******************
 * TRENDS SECTION  *
 ******************/
-
+.trends-follow-section{
+    /* height: 150vh; */
+    /* background: red */
+}
 .trends-follow-container{
     display:flex;
     flex-direction: column;
@@ -437,25 +442,29 @@ ion-icon[name="search-outline"]
 }
 
 /*** TREND TOPICS ***/
-.trends-box{
-    /* padding:10px; */
-    /* border: 1px solid black; */
-    border-radius: 10px;
+
+.trends-box, .who-to-follow-box{
+    border-radius: 12px;
     background: #F7F9F9;
-    /* background: red */
+    /* padding:10px; */
+    /* background: red; */
 }
 
-.trend-topics{ 
-    display: flex;
-    flex-direction: column;
+.trend-topics p{
+    font-size:80%;
 }
 
-.trends-heading{
+.trend-topics h4{
+    /* font-size:80%; */
+    padding: 5px 0px;
+}
+
+.box-heading{
     display:flex;
-    gap: 47%;
+    gap: 56%;
     padding: 10px 14px;
 }
-.topic, .show-more{
+.topic, .show-more, .user-profile{
     /* color: red; */
     /* background: red; */
     padding:14px 14px
@@ -500,3 +509,44 @@ ion-icon[name="search-outline"]
 }
 
 
+/*** WHO-TO-FOLLOW ***/
+.user-profile{
+    padding: 10px;
+    display:flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+.user-profile .profile-pic{
+    /* flex-basis: 50px; */
+    /* display: block; */
+    /* float:left;
+    margin-right: 10px; */
+}
+
+.user-profile:hover{
+    background: #F7F7F7;
+    cursor: pointer;
+}
+.extra-details{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: space-between;
+    /* gap:40px; */
+}
+
+.follow-btn{
+    font-weight: 400;
+    /* float:left; */
+    /* flex: 4; */
+    color: white;
+    background: black;
+    border-radius: 28px;
+    padding: 8px 20px;
+}
+.user-profile p a:hover{
+    text-decoration: underline;
+}
