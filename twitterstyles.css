@@ -6,6 +6,7 @@
 
 html{
     font-family: 'Arimo', sans-serif;
+    /* font-size:10%; */
     /* word-spacing: 1px; */
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -27,6 +28,8 @@ ion-icon{
 }
 
 .btn{
+    font-weight: 700;
+    font-size: 85%;
     color: white;
     background: #1E9BF0;
     border-radius: 58px;
@@ -67,7 +70,10 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .trends-follow-section{
-    flex: 2.8; 
+    flex: 2.8;
+    background-color: yellow;
+    /* height: 100%; */
+    /* flex: 0 0 250px; */
     /* display: none; */
 }
 
@@ -127,12 +133,10 @@ button, input[type="submit"], input[type="reset"] {
 
 /* NAV-SECTION BUTTON */
 .navtweetbtn{
-    /* font-weight: 400; */
-    font-size: 20px;
     /* align-self: auto; */
     margin-top:7px;
-    padding: 14px 90px;
-    box-shadow: 0 5px 15px #e3dede;
+    padding: 18px 90px;
+    box-shadow: -1px 10px 18px #c4c0c050;
 }
 
 /* NAV-SECTION ICONS */
@@ -389,7 +393,7 @@ textarea:focus{outline: none}
     padding: 3px 25px;
     padding-right: 50px;
     gap: 18px;
-    /* background: red; */
+    background: red;
 }
 
 
@@ -433,7 +437,7 @@ input[placeholder]{
     font-size: 100%
 }
 
-input:focus{outline: none}
+input:focus{outline:#1b97e9}
 
 ion-icon[name="search-outline"]
 {
@@ -461,8 +465,17 @@ ion-icon[name="search-outline"]
 
 .box-heading{
     display:flex;
-    gap: 56%;
+    /* gap: 56%; */
+    justify-content: space-between;
     padding: 10px 14px;
+  
+}
+.box-heading h3{
+    flex-grow: 1;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* letter-spacing: 1px; */
+    font-size: 140%;
+    /* font-weight: 600; */
 }
 .topic, .show-more, .user-profile{
     /* color: red; */
@@ -539,7 +552,8 @@ ion-icon[name="search-outline"]
 }
 
 .follow-btn{
-    font-weight: 400;
+    font-weight: 600;
+    /* font-weight: 400; */
     /* float:left; */
     /* flex: 4; */
     color: white;
