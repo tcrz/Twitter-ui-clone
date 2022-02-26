@@ -1,13 +1,13 @@
 $(document).ready(function() {
-    // autoresize input-tweet field
+    /* autoresize input-tweet field */
     autosize($('textarea'));
     
-    // Highlight searchbox onclick
+    /* Highlight searchbox onclick */
     $('.search-box').click(function () {
         $(this).addClass('search-box-highlight')
     })
 
-    // Show or Hide extra trend topics
+    /* Show or Hide extra trend topics */
     $('.show-more-trends').click(function () {
         $('.extra-topics').toggleClass('show')
         $("#text-toggle").fadeOut(function () {
@@ -15,7 +15,7 @@ $(document).ready(function() {
         })
     })
 
-     // Show or Hide extra follow suggestions
+     /* Show or Hide extra follow suggestions */
      $('.show-more-follows').click(function () {
       $('.extra-follows').toggleClass('show')
       $("#text-toggle-follows").fadeOut(function () {
@@ -23,7 +23,7 @@ $(document).ready(function() {
       })
   })
 
-    // Highlights selected Nav menu-option
+    /* Highlights selected Nav menu-option */
     const nodes = document.querySelectorAll('.color-toggle');
     nodes.forEach((node) => {
     node.addEventListener('click', (e) => {
