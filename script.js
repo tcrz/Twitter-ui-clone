@@ -1,6 +1,6 @@
 $(document).ready(function() {
     /* autoresize input-tweet field */
-    autosize($('textarea'));
+//     autosize($('textarea'));
     
     /* Highlight searchbox onclick */
     $('.search-box').click(function () {
