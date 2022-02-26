@@ -6,14 +6,11 @@
 
 html{
     font-family: 'Arimo', sans-serif;
-    /* font-size:10%; */
-    /* word-spacing: 1px; */
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     /* height: 100%; */
     font-size: 97%;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 a{
@@ -53,29 +50,17 @@ button, input[type="submit"], input[type="reset"] {
 /******************
 *     LAYOUT      *
 ******************/
-.twitter{
-    display:flex;
-}
+.twitter{display:flex;}
 
-.nav-section{
-    /* display: none; */
-    flex: 2.1;
-    
-}
+.nav-section{flex: 2.1;}
 
 .timeline-section{
     flex: 4;
-    border-right: 1px solid rgba(239, 237, 237, 0.74);
-    border-left: 1px solid rgba(239, 237, 237, 0.74);
+    border-right: 1px solid #efededbd;
+    border-left: 1px solid #efededbd;
 }
 
-.trends-follow-section{
-    flex: 2.8;
-    /* background-color: yellow; */
-    /* height: 100%; */
-    /* flex: 0 0 250px; */
-    /* display: none; */
-}
+.trends-follow-section{flex: 2.8;}
 
 /******************
 *   NAVIGATION    *
@@ -118,13 +103,10 @@ button, input[type="submit"], input[type="reset"] {
 .main-nav a {
     display: flex;
     align-items: center;
-    /* font-weight:600; */
     padding: 10px 12px;
     border: 1px solid transparent;
-    /* outline-style: solid; */
     border-radius: 150px;
     transition: ease-out 0.1s;
-    /* background: red; */
 }
 .main-nav a:hover{
     background: #E6E7E7;
@@ -133,16 +115,13 @@ button, input[type="submit"], input[type="reset"] {
 
 /* NAV-SECTION BUTTON */
 .navtweetbtn{
-    /* align-self: auto; */
     margin-top:7px;
     padding: 18px 90px;
     box-shadow: -1px 10px 18px #c4c0c050;
 }
 
 /* NAV-SECTION ICONS */
-.main-nav-box ion-icon{
-    margin-right: 20px;
-}
+.main-nav-box ion-icon{margin-right: 20px;}
 
 
 .main-nav-box ion-icon[name="logo-twitter"]{
@@ -166,8 +145,7 @@ button, input[type="submit"], input[type="reset"] {
     padding: 10px 12px;
     border-radius: 150px;
     position: relative;
-    cursor: pointer
-    /* justify-content: space-between; */
+    cursor: pointer;
 }
 
 .nav-user-account .profile-pic{
@@ -175,9 +153,7 @@ button, input[type="submit"], input[type="reset"] {
     height: 40px;
     border-radius: 150px;
 }
-.nav-user-account:hover{
-    background: #E6E7E7;
-}
+.nav-user-account:hover{background: #E6E7E7;}
 
 .user-details ion-icon{
     position: absolute;
@@ -204,7 +180,6 @@ button, input[type="submit"], input[type="reset"] {
     border-bottom: 1px solid #e2e2e2;
     gap: 8px;
     padding: 10px 20px;
-    /* background: rgb(149, 189, 235) */
     position: relative;
 }
 
@@ -232,22 +207,13 @@ button, input[type="submit"], input[type="reset"] {
     color: #423e3e;
 }
 
-.dot{
-    font-size: 8px;
-}
+.dot{font-size: 8px;}
 
-strong{
-    color:black
-}
+strong{color:black}
 
-.details-box{
-    /* background-color: pink; */
-    width: 100%
+.details-box{width: 100%;}
 
-}
-.tweet{
-    padding-bottom:5px
-}
+.tweet{padding-bottom:5px}
 
 /* TIMELINE TWEETBOX-ICONS */
 .timeline-icons{
@@ -290,7 +256,7 @@ ion-icon[name="repeat-outline"]:hover{
 }
 
 
-/***INPUT TWEETBOX, ICONS AND BUTTON***/
+/***USER-INPUT TWEETBOX, ICONS AND BUTTON***/
 .user-input:hover{
     background: none;
     cursor: auto
@@ -298,7 +264,6 @@ ion-icon[name="repeat-outline"]:hover{
 
 textarea{
     margin-top: 10px;
-    /* padding:0px; */
     border: none;
     width:100%;
     height:30px;
@@ -312,7 +277,6 @@ textarea{
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    /* background: red; */
 }
 .iconsandbtn-box ion-icon{
     border: 8px solid transparent;
@@ -320,30 +284,20 @@ textarea{
     color: #1d9bf0;
 }
 
-.iconsandbtn-box ion-icon:hover{
-    background: #00acee1a;
-}
+.iconsandbtn-box ion-icon:hover{background: #00acee1a;}
 
-.tweetbtn{
-    padding: 10px 20px;
-}
+.tweetbtn{padding: 10px 20px;}
 
 textarea:focus{outline: none}
 
 
-
 /* QUOTED TWEET */
-.quote-img{
-    /* margin: 0px; */
-    padding-top: 5px;
-}
+.quote-img{padding-top: 5px;}
 
 .quote-img .tweeted-photo{
-    /* display:inline-block; */
     border-radius: 10px;
     width:100%;
     height: 300px;
-    /* margin-top: 4px; */
 }
 
 
@@ -352,7 +306,6 @@ textarea:focus{outline: none}
     margin-top: 2px;
     border: 1px solid rgb(226, 226, 226);
     border-radius: 10px;
-    /* width: 400px; */
     padding: 10px;
 }
 
@@ -362,7 +315,6 @@ textarea:focus{outline: none}
 }
 
 .quoted-tweet-box{
-    /* background: red; */
     display: flex;
     align-items: center;
     gap: 5px;
@@ -378,17 +330,12 @@ textarea:focus{outline: none}
 /******************
 * TRENDS SECTION  *
 ******************/
-.trends-follow-section{
-    /* height: 150vh; */
-    /* background: red */
-}
 .trends-follow-container{
     display:flex;
     flex-direction: column;
     padding: 0px 25px;
     padding-right: 50px;
     gap: 18px;
-    /* background: red; */
 }
 
 
@@ -400,6 +347,7 @@ textarea:focus{outline: none}
     background: white;
     padding: 5px 3px;
 }
+
 .search-box{
     background: #EFF3F4;
     display: flex;
@@ -439,13 +387,10 @@ ion-icon[name="search-outline"]
     color: #667681;
 }
 
-/*** TREND TOPICS BOX ***/
-
+/*** TRENDING TOPICS BOX ***/
 .trends-box, .who-to-follow-box{
     border-radius: 12px;
     background: #F7F9F9;
-    /* padding:10px; */
-    /* background: red; */
 }
 
 .trend-topics p{font-size:80%;}
@@ -454,7 +399,6 @@ ion-icon[name="search-outline"]
 
 .box-heading{
     display:flex;
-    /* gap: 56%; */
     justify-content: space-between;
     padding: 10px 14px;
   
@@ -463,6 +407,7 @@ ion-icon[name="search-outline"]
     flex-grow: 1;
     font-size: 140%;
 }
+
 .topic, .show-more-trends, .user-profile{padding:14px 14px}
 
 .topic:hover{
@@ -485,7 +430,6 @@ ion-icon[name="search-outline"]
 
 .show-more-trends p, .show-more-follows{
     color:#1E9BF0;
-    /* padding: 16px 14px; */
     font-size: 110%;
     border-radius: 0px 0px 10px 10px
 }
@@ -501,20 +445,11 @@ ion-icon[name="search-outline"]
 .extra-topics.show{display:block}
 
 
-/*** WHO-TO-FOLLOW ***/
+/*** WHO-TO-FOLLOW BOX ***/
 .user-profile{
     padding: 10px;
     display:flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
     gap: 10px;
-    /* justify-content: space-between; */
-}
-.user-profile .profile-pic{
-    /* flex-basis: 50px; */
-    /* display: block; */
-    /* float:left;
-    margin-right: 10px; */
 }
 
 .user-profile:hover{
@@ -527,22 +462,16 @@ ion-icon[name="search-outline"]
     flex-grow: 1;
     align-self: center;
     justify-content: space-between;
-    /* gap:40px; */
 }
 
 .follow-btn{
     font-weight: 600;
-    /* font-weight: 400; */
-    /* float:left; */
-    /* flex: 4; */
     color: white;
     background: black;
     border-radius: 28px;
     padding: 8px 20px;
 }
-.user-profile p a:hover{
-    text-decoration: underline;
-}
+.user-profile p a:hover{text-decoration: underline;}
 
 .show-more-follows{
     padding:14px 14px
