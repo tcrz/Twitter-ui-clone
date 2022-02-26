@@ -71,7 +71,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .trends-follow-section{
     flex: 2.8;
-    background-color: yellow;
+    /* background-color: yellow; */
     /* height: 100%; */
     /* flex: 0 0 250px; */
     /* display: none; */
@@ -219,13 +219,7 @@ button, input[type="submit"], input[type="reset"] {
     border-radius: 150px;
 }
 
-.handle{
-    /* background: blue; */
-    /* display:flex; */
-    /* gap: 160px; */
-    /* justify-content: space-between; */
-    
-}
+.handle p{color: #536471;}
 
 .handle a:hover{
     text-decoration: underline;
@@ -251,13 +245,14 @@ strong{
     width: 100%
 
 }
+.tweet{
+    padding-bottom:5px
+}
 
 /* TIMELINE TWEETBOX-ICONS */
 .timeline-icons{
     display: flex;
     gap: 20%;
-    margin-top: 8px;
-    /* background: lightblue; */
 }
 
 
@@ -390,10 +385,10 @@ textarea:focus{outline: none}
 .trends-follow-container{
     display:flex;
     flex-direction: column;
-    padding: 3px 25px;
+    padding: 0px 25px;
     padding-right: 50px;
     gap: 18px;
-    background: red;
+    /* background: red; */
 }
 
 
@@ -403,8 +398,7 @@ textarea:focus{outline: none}
     top: 0%;
     z-index: 999;
     background: white;
-    padding: 3px;
-    /* width: 100% */
+    padding: 5px 3px;
 }
 .search-box{
     background: #EFF3F4;
@@ -445,7 +439,7 @@ ion-icon[name="search-outline"]
     color: #667681;
 }
 
-/*** TREND TOPICS ***/
+/*** TREND TOPICS BOX ***/
 
 .trends-box, .who-to-follow-box{
     border-radius: 12px;
@@ -454,14 +448,9 @@ ion-icon[name="search-outline"]
     /* background: red; */
 }
 
-.trend-topics p{
-    font-size:80%;
-}
+.trend-topics p{font-size:80%;}
 
-.trend-topics h4{
-    /* font-size:80%; */
-    padding: 5px 0px;
-}
+.trend-topics h4{padding: 5px 0px;}
 
 .box-heading{
     display:flex;
@@ -472,16 +461,9 @@ ion-icon[name="search-outline"]
 }
 .box-heading h3{
     flex-grow: 1;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* letter-spacing: 1px; */
     font-size: 140%;
-    /* font-weight: 600; */
 }
-.topic, .show-more, .user-profile{
-    /* color: red; */
-    /* background: red; */
-    padding:14px 14px
-}
+.topic, .show-more-trends, .user-profile{padding:14px 14px}
 
 .topic:hover{
     background: #F7F7F7;
@@ -501,25 +483,22 @@ ion-icon[name="search-outline"]
     color:#1E9BF0;
 }
 
-.show-more p{
+.show-more-trends p, .show-more-follows{
     color:#1E9BF0;
     /* padding: 16px 14px; */
     font-size: 110%;
     border-radius: 0px 0px 10px 10px
 }
 
-.show-more:hover{
+.show-more-trends:hover,
+.show-more-follows:hover{
     background: #F7F7F7;
     cursor: pointer;
 }
 
-.extra-topics{
-    display:none
-}
+.extra-topics{display:none}
 
-.extra-topics.show{
-    display:block
-}
+.extra-topics.show{display:block}
 
 
 /*** WHO-TO-FOLLOW ***/
@@ -563,4 +542,20 @@ ion-icon[name="search-outline"]
 }
 .user-profile p a:hover{
     text-decoration: underline;
+}
+
+.show-more-follows{
+    padding:14px 14px
+}
+.extra-follows{
+    display:none
+}
+
+.extra-follows.show{
+    display:flex;
+}
+
+footer{
+    color: #536471;
+    font-size: 88%;
 }

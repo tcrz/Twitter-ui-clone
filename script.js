@@ -7,20 +7,21 @@ $(document).ready(function() {
         $(this).addClass('search-box-highlight')
     })
 
-        // $('html').click(function () {
-        //     if ($('.search-box').hasClass('search-box-hightlight'))
-        //     {
-        //         $('.search-box').removeClass('search-box-hightlight')
-        //     }
-        // })
-
     // Show or Hide extra trend topics
-    $('.show-more').click(function () {
+    $('.show-more-trends').click(function () {
         $('.extra-topics').toggleClass('show')
         $("#text-toggle").fadeOut(function () {
             $("#text-toggle").text(($("#text-toggle").text() == 'Show more trends') ? 'Hide extra trends' : 'Show more trends').fadeIn()
         })
     })
+
+     // Show or Hide extra follow suggestions
+     $('.show-more-follows').click(function () {
+      $('.extra-follows').toggleClass('show')
+      $("#text-toggle-follows").fadeOut(function () {
+          $("#text-toggle-follows").text(($("#text-toggle-follows").text() == 'Show more') ? 'Hide extra' : 'Show more').fadeIn()
+      })
+  })
 
     // Highlights selected Nav menu-option
     const nodes = document.querySelectorAll('.color-toggle');
@@ -34,9 +35,9 @@ $(document).ready(function() {
         ele.style.fontWeight = '300'
         ele.style.boxShadow= 'none'
       }
+        })
+      })
     })
-  })
-})
 
 
     
