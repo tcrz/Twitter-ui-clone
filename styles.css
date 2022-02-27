@@ -9,7 +9,6 @@ html{
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    /* height: 100%; */
     font-size: 97%;
 }
 
@@ -69,7 +68,6 @@ button, input[type="submit"], input[type="reset"] {
     position: sticky;
     top: 0%;
     height: 100vh;
-    /* color:red; */
     margin-left: 50px;
 }
 
@@ -77,9 +75,6 @@ button, input[type="submit"], input[type="reset"] {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* background:yellow; */
-    /* align-items: flex-start; */
-    /* gap:10%; */
     justify-content: space-between;
 }
 
@@ -88,7 +83,6 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .main-nav-box a{
-    /* padding: 5px 12px; */
     font-size: 133%;
     
 }
@@ -122,7 +116,6 @@ button, input[type="submit"], input[type="reset"] {
 
 /* NAV-SECTION ICONS */
 .main-nav-box ion-icon{margin-right: 20px;}
-
 
 .main-nav-box ion-icon[name="logo-twitter"]{
     font-size: 150%;
@@ -174,6 +167,32 @@ button, input[type="submit"], input[type="reset"] {
     z-index: 9999;
 }
 
+.mobile-tweet-icon{
+    display: none;
+    position:relative;
+    background-color:#1b97e9;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 2px 1px 4px #1b97e965;
+}
+
+.mobile-tweet-icon ion-icon{
+    font-size: 210%;
+    position:absolute;
+    top: 25%;
+    left: 25%;
+    color:white;
+}
+.mobile-tweet-icon ion-icon[name="add-outline"]{
+    font-size: 110%;
+}
+
+.mobile-timeline-nav{
+    display: none;
+}
+
+
 /**TWEET-BOX**/
 .tweet-box{
     display: flex;
@@ -219,6 +238,7 @@ strong{color:black}
 .timeline-icons{
     display: flex;
     gap: 20%;
+    /* justify-content: space-between; */
 }
 
 
@@ -444,7 +464,6 @@ ion-icon[name="search-outline"]
 
 .extra-topics.show{display:block}
 
-
 /*** WHO-TO-FOLLOW BOX ***/
 .user-profile{
     padding: 10px;
@@ -473,18 +492,63 @@ ion-icon[name="search-outline"]
 }
 .user-profile p a:hover{text-decoration: underline;}
 
-.show-more-follows{
-    padding:14px 14px
-}
-.extra-follows{
-    display:none
-}
+.show-more-follows{padding:14px 14px;}
 
-.extra-follows.show{
-    display:flex;
-}
+.extra-follows{display:none;}
+
+.extra-follows.show{display:flex;}
 
 footer{
     color: #536471;
     font-size: 88%;
+}
+
+/* MEDIA-QUERIES */
+@media (min-width: 320px) and (max-width:499px){
+
+    /*******  LAYOUT  ******/
+    .nav-section{display:none;}
+
+    .trends-follow-section{display:none;}
+
+    /* TIMELINE */
+    .user-input{display:none;}
+
+    .timeline-header h2{font-size:120%}
+
+    .mobile-tweet-icon{
+        position:fixed;
+        bottom: 13%;
+        left: 77%;
+        z-index: 2;
+        display: block;
+    }
+
+    .mobile-timeline-nav{
+        display: block;
+        border-top: 1px solid rgb(226, 226, 226);
+        background:white;
+        z-index: 9999;
+        position: fixed;
+        bottom:0%;
+        width: 100%;
+    }
+    .mobile-timeline-nav .main-nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        font-size: 130%;
+    }
+
+    /* TIMELINE TWEETBOX-ICONS */
+    .timeline-icons{
+        gap: 0%;
+        justify-content:space-between;
+    }
+
+    .timeline-icons ion-icon{font-size: 120%;}
+
+    
+    
 }

@@ -15,9 +15,10 @@
     <link rel="icon" href="images/logo-twitter.ico">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script src="Twitter-ui-clone/jquery/autosize.min.js"></script>
+    <script src="/jquery/autosize.min.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,8 @@
             <div class="nav-box">
                 <div class="nav">
                     <div class="main-nav-box">
-                       
-                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
                         <div class="main-nav">
-                            
                             <a href="#0" class="color-toggle"> <ion-icon name="home-outline"></ion-icon> Home </a>
                             <a href="#2" class="color-toggle"> <ion-icon name="globe-outline"></ion-icon> Explore</a>
                             <a href="#28"class="color-toggle"> <ion-icon name="notifications-outline"></ion-icon> Notifications</a>
@@ -42,14 +40,13 @@
                             <a href="#" class="color-toggle"> <ion-icon name="document-text-outline"></ion-icon> Lists</a>
                             <a href="#" class="color-toggle"> <ion-icon name="person-outline"></ion-icon> Profile</a>        
                             <a href="#" class="color-toggle"> <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon> More</a>
-                            
-                    </div>
+                        </div>
 
                         <div> 
                             <a href="#3"> <button class="btn navtweetbtn">Tweet</button> </a>
                         </div>
                     </div>
-                    
+
                     <div>
                         <div class="nav-user-account">
                             <img class="profile-pic"
@@ -59,9 +56,7 @@
                                     <p> <strong> <a href="#">Sugarr</a> </strong> 
                                         <br>@missxsDani 
                                     </p>
-                                    
                                     <ion-icon name="ellipsis-horizontal"></ion-icon>
-                                
                             </div>
             
                         </div>
@@ -75,7 +70,18 @@
             <div class="timeline-header">
                 <h2>Home</h2>
             </div>
-
+            <div class="mobile-tweet-icon">
+                <ion-icon name="pencil-outline"></ion-icon>
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <div class="mobile-timeline-nav">
+                <div class="main-nav">
+                    <a href="#0" class="color-toggle"> <ion-icon name="home-outline"></ion-icon></a>
+                    <a href="#2" class="color-toggle"> <ion-icon name="globe-outline"></ion-icon></a>
+                    <a href="#28"class="color-toggle"> <ion-icon name="notifications-outline"></ion-icon></a>
+                    <a href="#" class="color-toggle"> <ion-icon name="folder-outline"></ion-icon></a>
+                </div>
+            </div>
             <div class="tweet-box user-input">
                 <img class="profile-pic"
                     src="https://www.dhresource.com/0x0/f2/albu/g5/M00/9C/69/rBVaJFlt2AqAYb_9AANDTL-dnLA396.jpg/paris-eiffel-tower-photography-backdrop-beautiful.jpg"
