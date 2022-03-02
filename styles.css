@@ -78,14 +78,9 @@ button, input[type="submit"], input[type="reset"] {
     justify-content: space-between;
 }
 
-.main-nav-box{
-    padding-top: 5px;
-}
+.main-nav-box{padding-top: 5px;}
 
-.main-nav-box a{
-    font-size: 133%;
-    
-}
+.main-nav-box a{font-size: 133%;}
 
 .main-nav {
     display: flex;
@@ -115,18 +110,19 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 /* NAV-SECTION ICONS */
-.main-nav-box ion-icon{margin-right: 20px;}
+.main-nav ion-icon{margin-right: 20px;}
 
-.main-nav-box ion-icon[name="logo-twitter"]{
-    font-size: 150%;
+.main-nav ion-icon[name="logo-twitter"]{
+    font-size: 200%;
     border: 1px solid transparent;
     padding: 10px 12px;
     border-radius: 50%;
     color:#1E9BF0;
 }
 
-.main-nav-box ion-icon[name="logo-twitter"]:hover{
+.main-nav ion-icon[name="logo-twitter"]:hover{
         background: #e0ecf8b7;
+        
 }
 
 /* NAV-SECTION USER-ACCOUNT */
@@ -503,23 +499,28 @@ footer{
     font-size: 88%;
 }
 
+
+
 /* MEDIA-QUERIES */
+@media (min-width: 320px) and (max-width:1023px){
+     .trends-follow-section{display:none;}
+
+    .timeline-icons ion-icon{font-size: 120%;}
+
+    .navtweetbtn{display:none;}
+}
+
 @media (min-width: 320px) and (max-width:499px){
-
-    /*******  LAYOUT  ******/
-    .nav-section{display:none;}
-
-    .trends-follow-section{display:none;}
-
-    /* TIMELINE */
     .user-input{display:none;}
+
+    .nav-section{display:none;}
 
     .timeline-header h2{font-size:120%}
 
     .mobile-tweet-icon{
         position:fixed;
         bottom: 13%;
-        left: 77%;
+        right: 5%;
         z-index: 2;
         display: block;
     }
@@ -541,14 +542,27 @@ footer{
         font-size: 130%;
     }
 
-    /* TIMELINE TWEETBOX-ICONS */
     .timeline-icons{
         gap: 0%;
         justify-content:space-between;
     }
-
-    .timeline-icons ion-icon{font-size: 120%;}
-
     
     
+}
+
+@media (min-width: 500px) and (max-width:768px){
+
+    .timeline-section{flex:12}
+
+    .main-nav span{ display: none;}
+
+    .nav-box, .main-nav-box ion-icon{margin:0}
+
+    .main-nav .mobile-tweet-icon{display:block;}
+
+    .main-nav{align-items: center;}
+
+    .nav-user-account {justify-content: space-around;}
+
+    .nav-user-account .user-details{display:none;}
 }
