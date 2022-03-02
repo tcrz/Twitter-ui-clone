@@ -230,6 +230,10 @@ strong{color:black}
 
 .tweet{padding-bottom:5px}
 
+.last{
+    border-bottom: none;
+}
+
 /* TIMELINE TWEETBOX-ICONS */
 .timeline-icons{
     display: flex;
