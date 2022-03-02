@@ -230,7 +230,7 @@ strong{color:black}
 
 .tweet{padding-bottom:5px}
 
-.last{
+.last-box{
     border-bottom: none;
 }
 
@@ -311,10 +311,10 @@ textarea{
 textarea:focus{outline: none}
 
 
-/* QUOTED TWEET */
-.quote-img{padding-top: 5px;}
+/* IMAGE TWEET */
+.tweet-img{padding-top: 5px;}
 
-.quote-img .tweeted-photo{
+.tweet-img img{
     border-radius: 10px;
     width:100%;
     height: 300px;
