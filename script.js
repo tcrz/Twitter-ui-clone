@@ -24,25 +24,21 @@ $(document).ready(function() {
   })
 
     /* Highlights selected Nav menu-option */
-    const nodes = document.querySelectorAll('.color-toggle');
+    const nodes = document.querySelectorAll( '.color-toggle');
     nodes.forEach((node) => {
     node.addEventListener('click', (e) => {
     nodes.forEach(ele => {
       if(ele === e.target){
         ele.style.fontWeight = '700'
-        ele.style.boxShadow= '0 0 0 0.5pt #1b97e9'
+        ele.style.color= '#1b97e9'
       } else {
         ele.style.fontWeight = '300'
-        ele.style.boxShadow= 'none'
+        ele.style.color= 'black'
       }
         })
       })
     })
 
-    autosize($('textarea'));
-    
-
-
-
+ 
 
 })
